@@ -1,0 +1,132 @@
+.tarot-advice {
+  padding: 32px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tarot-advice__card-interpretation {
+  background: linear-gradient(135deg, #FFF8F0 0%, #F5E6D3 100%);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 
+    0 4px 16px rgba(85, 137, 114, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  margin-bottom: 24px;
+}
+
+.tarot-advice__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #558972;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.tarot-advice__interpretation-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #4A4A4A;
+  letter-spacing: -0.2px;
+}
+
+.tarot-advice__todo-section {
+  background: linear-gradient(135deg, #FFF8F0 0%, #F5E6D3 100%);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 
+    0 4px 16px rgba(85, 137, 114, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.tarot-advice__todo-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #558972;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+}
+
+.tarot-advice__todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tarot-advice__todo-item {
+  position: relative;
+}
+
+.tarot-advice__todo-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 12px;
+  transition: background-color 0.2s;
+}
+
+.tarot-advice__todo-label:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tarot-advice__todo-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid #A8C4B3;
+  background: #FFF8F0;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.tarot-advice__todo-checkbox:checked {
+  background: #558972;
+  border-color: #558972;
+}
+
+.tarot-advice__todo-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tarot-advice__todo-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4A4A4A;
+  flex: 1;
+  transition: all 0.2s;
+}
+
+.tarot-advice__todo-text--completed {
+  text-decoration: line-through;
+  color: #8B8B8B;
+  opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+  .tarot-advice__card-interpretation,
+  .tarot-advice__todo-section {
+    padding: 20px;
+  }
+  
+  .tarot-advice__title,
+  .tarot-advice__todo-title {
+    font-size: 18px;
+  }
+  
+  .tarot-advice__interpretation-text {
+    font-size: 14px;
+  }
+}
+
