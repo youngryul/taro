@@ -73,26 +73,56 @@ src/
 
 ## 상세 기능 설명
 
-### 1. 오늘의 운세 화면 (TodayFortune)
+### 1. 오늘의 운세 화면 (TodayFortune) - ⭐ 최신 업데이트
 
 **코드 위치:**
-- 컴포넌트: `src/components/TodayFortune/TodayFortune.tsx`
+- 메인 컴포넌트: `src/components/TodayFortune/TodayFortune.tsx`
 - 스타일: `src/components/TodayFortune/TodayFortune.css`
-- 애니메이션 상수: `src/constants/animations.ts` (CARD_FLOAT_DURATION, CARD_FLOAT_DELAY_1~3)
+- 카드 컴포넌트: `src/components/TarotCard/TarotCard.tsx`
+- 카드 스타일: `src/components/TarotCard/TarotCard.css`
+- 타로카드 데이터: `src/constants/tarotCards.ts` (74장)
+- 나선형 레이아웃: `src/utils/spiralLayout.ts`
 
 **주요 기능:**
-- **3장의 타로 카드 표시**: 과거, 현재, 미래를 나타내는 카드
-- **떠다니는 애니메이션**: 각 카드가 독립적으로 위아래로 부드럽게 움직임 (`float` 애니메이션)
-- **글로우 효과**: 카드 내부에 빛이 번지는 효과 (`shimmer` 애니메이션)
-- **호버 인터랙션**: 마우스 오버 시 카드가 위로 올라가며 약간 확대됨
-- **그라데이션 배경**: 크림 화이트에서 로즈 베이지로의 부드러운 그라데이션
-- **인셋 그림자**: 카드 내부에 은은한 빛 효과
-- **반응형 디자인**: 모바일에서 카드 크기 자동 조정 (100px → 90px)
+
+#### Black Gold 스타일 디자인
+- **다크 배경**: 검은색과 금색의 고급스러운 조합
+- **금색 테두리**: 카드 테두리와 모서리 장식에 골드(#d4af37) 사용
+- **은은한 그림자**: 금색 글로우 효과 적용
+- **달과 별 장식**: 뒷면에 초승달(☾, ☽)과 별(✦) 심볼
+
+#### 74장 타로카드 시스템
+- **메이저 아르카나 22장**: 바보, 마법사, 여사제 등
+- **마이너 아르카나 52장**: 완드, 컵, 소드, 펜타클 각 13장
+- **동적 카드 관리**: `tarotCards.ts`에서 카드 정보 중앙 관리
+- **확장 가능한 구조**: 카드 추가/변경 용이
+
+#### 나선형 레이아웃
+- **아르키메데스 나선**: 카드가 중심에서 바깥으로 나선형 배치
+- **부드러운 애니메이션**: 카드가 순차적으로 펼쳐짐
+- **동적 위치 계산**: 컨테이너 크기에 따라 자동 조정
+- **3가지 레이아웃 옵션**: 나선형, 부채꼴, 원형 (spiralLayout.ts)
+
+#### 사용자 인터랙션
+- **클릭하여 선택**: 사용자가 직접 3장의 카드 선택
+- **선택 표시**: 선택된 카드에 금색 체크 표시
+- **카드 뒤집기**: 선택 시 앞면으로 부드럽게 회전
+- **호버 효과**: 마우스 오버 시 카드 확대 및 금색 글로우
+- **선택 제한**: 최대 3장까지만 선택 가능
+- **선택 취소**: 선택된 카드 재클릭 시 해제
+
+#### 애니메이션 단계
+1. **초기화** (`initial`): 카드 셔플
+2. **펼치기** (`spreading`): 74장이 나선형으로 펼쳐짐
+3. **준비** (`ready`): 사용자 선택 대기
+4. **선택 중** (`selecting`): 카드 선택 진행
+5. **결과** (`result`): 선택된 3장 표시 (과거/현재/미래)
 
 **구현 세부사항:**
-- 각 카드는 `animationDelay`를 다르게 설정하여 순차적으로 움직임
-- `perspective: 1000px`로 3D 효과 제공
-- 카드 패턴에 별(✦) 심볼 사용
+- `useState`로 선택 상태 관리
+- `useRef`로 컨테이너 크기 측정
+- CSS `transform`과 `position: absolute`로 나선 배치
+- 카드 앞/뒷면은 `transform: rotateY(180deg)`로 회전
 
 ---
 
@@ -274,6 +304,53 @@ src/
 ---
 
 ## 커스터마이징 가이드
+
+### 타로카드 변경 및 추가
+**방법 1: 카드 수 변경**
+```typescript
+// src/constants/tarotCards.ts
+export const TOTAL_CARDS_COUNT = 74; // 원하는 숫자로 변경
+```
+
+**방법 2: 카드 이미지 교체**
+```typescript
+// src/constants/tarotCards.ts
+{
+  id: 0,
+  name: 'The Fool',
+  nameKo: '바보',
+  imageUrl: '/tarot-images/major/0.jpg', // 이미지 경로 변경
+  meaning: '새로운 시작, 순수함'
+}
+```
+
+**방법 3: 카드 추가**
+```typescript
+// src/constants/tarotCards.ts
+export const TAROT_CARDS: TarotCard[] = [
+  ...기존 카드들,
+  {
+    id: 78,
+    name: 'Custom Card',
+    nameKo: '커스텀 카드',
+    type: 'major',
+    imageUrl: '/tarot-images/custom.jpg',
+    meaning: '특별한 의미'
+  }
+];
+```
+
+### 레이아웃 변경
+나선형 → 부채꼴 또는 원형으로 변경:
+```typescript
+// src/components/TodayFortune/TodayFortune.tsx
+import { calculateFanPositions, calculateCirclePositions } from '../../utils/spiralLayout';
+
+// calculateSpiralPositions 대신 사용:
+const positions = calculateFanPositions(shuffledCards.length, width, height);
+// 또는
+const positions = calculateCirclePositions(shuffledCards.length, width, height);
+```
 
 ### 색상 변경
 `src/constants/colors.ts` 파일에서 색상 상수를 수정하면 전체 앱의 색상이 일괄 변경됩니다.

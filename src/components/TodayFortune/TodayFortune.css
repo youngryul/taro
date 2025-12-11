@@ -1,25 +1,262 @@
 .today-fortune {
   padding: 32px 20px;
   text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5e6e6 0%, #f0d8d8 30%, #e8d5d5 60%, #f5e6e6 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.today-fortune::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 192, 203, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 182, 193, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 192, 203, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+  animation: backgroundShimmer 20s ease-in-out infinite;
+}
+
+.today-fortune::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    );
+  pointer-events: none;
+}
+
+@keyframes backgroundShimmer {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.today-fortune__header {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 32px;
 }
 
 .today-fortune__title {
-  font-size: 28px;
-  font-weight: 500;
-  color: #4A4A4A;
-  margin-bottom: 32px;
-  letter-spacing: -0.5px;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(255, 105, 180, 0.9);
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+  text-shadow: 
+    0 0 20px rgba(255, 182, 193, 0.5),
+    0 2px 4px rgba(188, 143, 143, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.today-fortune__cards {
+.today-fortune__title-ornament {
+  font-size: 20px;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.today-fortune__instruction {
+  font-size: 16px;
+  color: rgba(255, 105, 180, 0.95);
+  font-weight: 500;
+  letter-spacing: 1px;
+  animation: pulse 2s ease-in-out infinite;
+  text-shadow: 
+    0 1px 3px rgba(255, 255, 255, 0.8),
+    0 0 8px rgba(255, 182, 193, 0.4);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* 카드 펼치기 영역 */
+.today-fortune__spread {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  min-height: 650px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.today-fortune__spread--spreading {
+  animation: spreadGlow 2s ease-out;
+}
+
+@keyframes spreadGlow {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+/* 결과 화면 */
+.today-fortune__result {
+  position: relative;
+  z-index: 10;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.today-fortune__result-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 40px;
   flex-wrap: wrap;
-  perspective: 1000px;
+  margin-bottom: 40px;
 }
 
+.today-fortune__result-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  animation: resultCardAppear 0.8s ease-out backwards;
+}
+
+.today-fortune__result-card-wrapper:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.today-fortune__result-card-wrapper:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.today-fortune__result-card-wrapper:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes resultCardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.today-fortune__result-card-wrapper .tarot-card {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none !important;
+  width: 120px;
+  height: 192px;
+}
+
+.today-fortune__result-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 105, 180, 0.9);
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
+}
+
+.today-fortune__result-meaning {
+  font-size: 14px;
+  color: rgba(255, 182, 193, 0.85);
+  max-width: 200px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.today-fortune__reset-button {
+  padding: 14px 32px;
+  background: linear-gradient(135deg, rgba(255, 182, 193, 0.9) 0%, rgba(255, 192, 203, 0.8) 100%);
+  color: #ffffff;
+  border: 2px solid rgba(255, 182, 193, 0.7);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 
+    0 4px 16px rgba(255, 182, 193, 0.5),
+    0 2px 8px rgba(188, 143, 143, 0.3),
+    inset 0 0 20px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(255, 192, 203, 0.3);
+}
+
+.today-fortune__reset-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.today-fortune__reset-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.today-fortune__reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 24px rgba(255, 182, 193, 0.7),
+    0 4px 12px rgba(255, 192, 203, 0.5),
+    inset 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.today-fortune__reset-button:active {
+  transform: translateY(0);
+}
+
+/* 기존 카드 스타일 (하위 호환성) */
 .today-fortune__card {
   position: relative;
   width: 100px;
@@ -118,14 +355,48 @@
   }
 }
 
+/* 반응형 디자인 */
 @media (max-width: 768px) {
-  .today-fortune__card {
+  .today-fortune__title {
+    font-size: 24px;
+  }
+
+  .today-fortune__spread {
+    height: 70vh;
+    min-height: 550px;
+  }
+
+  .today-fortune__result-cards {
+    gap: 24px;
+  }
+
+  .today-fortune__result-card-wrapper .tarot-card {
     width: 90px;
     height: 144px;
   }
-  
-  .today-fortune__cards {
-    gap: 12px;
+
+  .today-fortune__result-label {
+    font-size: 16px;
+  }
+
+  .today-fortune__result-meaning {
+    font-size: 12px;
   }
 }
 
+@media (max-width: 480px) {
+  .today-fortune__title {
+    font-size: 20px;
+    gap: 12px;
+  }
+
+  .today-fortune__spread {
+    height: 65vh;
+    min-height: 480px;
+  }
+
+  .today-fortune__result-card-wrapper .tarot-card {
+    width: 70px;
+    height: 112px;
+  }
+}
