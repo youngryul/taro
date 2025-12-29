@@ -100,6 +100,7 @@ export const calculateCirclePositions = (
   containerHeight: number = 600
 ): SpiralPosition[] => {
   const positions: SpiralPosition[] = [];
+  // 정확히 중앙에 배치
   const centerX = containerWidth / 2;
   const centerY = containerHeight / 2;
   
@@ -116,6 +117,7 @@ export const calculateCirclePositions = (
   for (let i = 0; i < totalCards; i++) {
     const angle = i * angleStep - Math.PI / 2; // -90도부터 시작
     
+    // 정확히 중앙 기준으로 계산
     const x = centerX + radius * Math.cos(angle);
     const y = centerY + radius * Math.sin(angle);
     
