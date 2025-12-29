@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './TodayFortune.css';
 import { TarotCard as TarotCardComponent } from '../TarotCard/TarotCard';
+import { LoginModal } from '../Auth/LoginModal';
+import { useAuth } from '../../contexts/AuthContext';
 import { 
   ACTIVE_TAROT_CARDS, 
   SELECTED_CARDS_COUNT, 
@@ -8,6 +10,7 @@ import {
   TarotCard as TarotCardType 
 } from '../../constants/tarotCards';
 import { calculateCirclePositions, SpiralPosition } from '../../utils/spiralLayout';
+import { drawTodayTarot, saveTarotReading } from '../../services/tarotService';
 
 /**
  * 애니메이션 단계 타입
@@ -20,6 +23,9 @@ type Phase = 'initial' | 'spreading' | 'ready' | 'selecting' | 'result';
  */
 export const TodayFortune: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { user, isAuthenticated } = useAuth();
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   
   const [phase, setPhase] = useState<Phase>('initial');
   const [shuffledCards, setShuffledCards] = useState<TarotCardType[]>([]);
@@ -101,6 +107,33 @@ export const TodayFortune: React.FC = () => {
     setCardPositions([]);
   };
 
+  // 타로 결과 저장
+  const handleSave = async () => {
+    if (!isAuthenticated) {
+      setShowLoginModal(true);
+      return;
+    }
+
+    if (selectedCards.length !== SELECTED_CARDS_COUNT || !user?.id) {
+      return;
+    }
+
+    try {
+      setIsSaving(true);
+      // 첫 번째 카드를 오늘의 타로로 저장
+      const result = await drawTodayTarot(user.id);
+      if (result.reading?.reading_id) {
+        await saveTarotReading(result.reading.reading_id, user.id);
+        alert('타로 결과가 저장되었습니다!');
+      }
+    } catch (error) {
+      console.error('저장 오류:', error);
+      alert('저장에 실패했습니다. 다시 시도해주세요.');
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   return (
     <section className="today-fortune">
       <div className="today-fortune__header">
@@ -143,13 +176,23 @@ export const TodayFortune: React.FC = () => {
               </div>
             ))}
           </div>
-          <button 
-            className="today-fortune__reset-button"
-            onClick={handleReset}
-            type="button"
-          >
-            다시 뽑기
-          </button>
+          <div className="today-fortune__result-actions">
+            <button 
+              className="today-fortune__save-button"
+              onClick={handleSave}
+              disabled={isSaving}
+              type="button"
+            >
+              {isSaving ? '저장 중...' : isAuthenticated ? '이 타로 저장하기' : '이 타로를 당신의 이야기로 남길까요?'}
+            </button>
+            <button 
+              className="today-fortune__reset-button"
+              onClick={handleReset}
+              type="button"
+            >
+              다시 뽑기
+            </button>
+          </div>
         </div>
       ) : (
         // 카드 덱 표시
@@ -182,6 +225,12 @@ export const TodayFortune: React.FC = () => {
           })}
         </div>
       )}
+      
+      <LoginModal
+        isOpen={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
+        message="이 타로를 당신의 이야기로 남길까요?"
+      />
     </section>
   );
 };
