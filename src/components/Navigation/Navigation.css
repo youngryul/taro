@@ -115,6 +115,42 @@
   white-space: nowrap;
 }
 
+.navigation__auth {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__auth-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid rgba(255, 192, 203, 0.4);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 105, 180, 0.85);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__auth-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 182, 193, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+}
+
+.navigation__auth-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.navigation__auth-text {
+  white-space: nowrap;
+}
+
 /* 반응형 디자인 */
 @media (max-width: 768px) {
   .navigation__container {
