@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#eef6dc"/>
+      <stop offset="1" stop-color="#f2dea6"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="186.9,125.7 187.8,128.5 190.6,129.4 187.8,130.3 186.9,133.1 186.0,130.3 183.2,129.4 186.0,128.5" fill="#ffffff" opacity="0.78"/><polygon points="216.9,95.6 217.7,98.1 220.2,98.9 217.7,99.7 216.9,102.2 216.1,99.7 213.6,98.9 216.1,98.1" fill="#ffffff" opacity="0.79"/><polygon points="64.4,278.5 65.3,281.2 68.0,282.0 65.3,282.9 64.4,285.6 63.6,282.9 60.9,282.0 63.6,281.2" fill="#ffffff" opacity="0.82"/><polygon points="99.7,251.6 100.2,253.0 101.5,253.4 100.2,253.8 99.7,255.2 99.3,253.8 97.9,253.4 99.3,253.0" fill="#ffffff" opacity="0.39"/><polygon points="117.7,69.4 118.4,71.3 120.3,72.0 118.4,72.6 117.7,74.5 117.1,72.6 115.2,72.0 117.1,71.3" fill="#ffffff" opacity="0.67"/><polygon points="132.7,269.9 133.6,272.8 136.5,273.7 133.6,274.6 132.7,277.5 131.8,274.6 128.9,273.7 131.8,272.8" fill="#ffffff" opacity="0.84"/><polygon points="138.5,56.1 139.3,58.6 141.8,59.4 139.3,60.3 138.5,62.7 137.7,60.3 135.2,59.4 137.7,58.6" fill="#ffffff" opacity="0.41"/><polygon points="84.2,114.5 85.1,117.1 87.6,118.0 85.1,118.8 84.2,121.4 83.4,118.8 80.8,118.0 83.4,117.1" fill="#ffffff" opacity="0.79"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#b49a4c" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#b49a4c" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#55491c">II</text>
+  <g><g transform="translate(125 113) rotate(0) scale(0.8)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(125 223) rotate(0) scale(0.8)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#55491c">디스크 2</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#55491c" opacity="0.8">TWO OF DISKS</text>
+</svg>

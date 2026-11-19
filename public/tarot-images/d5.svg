@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#eef6dc"/>
+      <stop offset="1" stop-color="#f2dea6"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="73.4,69.5 74.3,72.3 77.1,73.2 74.3,74.1 73.4,76.9 72.5,74.1 69.7,73.2 72.5,72.3" fill="#ffffff" opacity="0.64"/><polygon points="203.3,283.6 204.2,286.3 206.8,287.1 204.2,288.0 203.3,290.7 202.4,288.0 199.8,287.1 202.4,286.3" fill="#ffffff" opacity="0.40"/><polygon points="143.2,173.5 144.0,175.9 146.4,176.7 144.0,177.4 143.2,179.8 142.5,177.4 140.1,176.7 142.5,175.9" fill="#ffffff" opacity="0.71"/><polygon points="63.9,236.9 64.8,239.7 67.6,240.6 64.8,241.5 63.9,244.3 63.0,241.5 60.3,240.6 63.0,239.7" fill="#ffffff" opacity="0.58"/><polygon points="122.2,38.2 123.1,40.9 125.8,41.8 123.1,42.7 122.2,45.4 121.3,42.7 118.6,41.8 121.3,40.9" fill="#ffffff" opacity="0.50"/><polygon points="94.4,158.3 95.2,160.5 97.4,161.2 95.2,161.9 94.4,164.1 93.7,161.9 91.5,161.2 93.7,160.5" fill="#ffffff" opacity="0.63"/><polygon points="223.0,139.8 223.6,141.7 225.5,142.3 223.6,142.9 223.0,144.8 222.4,142.9 220.6,142.3 222.4,141.7" fill="#ffffff" opacity="0.58"/><polygon points="99.0,22.1 99.6,24.1 101.7,24.8 99.6,25.5 99.0,27.5 98.3,25.5 96.3,24.8 98.3,24.1" fill="#ffffff" opacity="0.51"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#b49a4c" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#b49a4c" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#55491c">V</text>
+  <g><g transform="translate(89 108) rotate(0) scale(0.66)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(161 108) rotate(0) scale(0.66)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(125 168) rotate(0) scale(0.66)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(89 228) rotate(0) scale(0.66)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(161 228) rotate(0) scale(0.66)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#55491c">디스크 5</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#55491c" opacity="0.8">FIVE OF DISKS</text>
+</svg>

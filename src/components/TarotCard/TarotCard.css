@@ -401,3 +401,15 @@
   }
 }
 
+
+/* 실제 카드 사진 (앞면) */
+.tarot-card__front-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 2;
+  user-select: none;
+}

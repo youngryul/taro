@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#e3efff"/>
+      <stop offset="1" stop-color="#c3c9f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="198.2,52.3 199.0,54.4 201.1,55.2 199.0,55.9 198.2,58.0 197.5,55.9 195.4,55.2 197.5,54.4" fill="#ffffff" opacity="0.42"/><polygon points="120.3,62.7 120.7,64.0 122.0,64.4 120.7,64.9 120.3,66.2 119.8,64.9 118.5,64.4 119.8,64.0" fill="#ffffff" opacity="0.45"/><polygon points="78.0,199.2 78.7,201.3 80.9,202.1 78.7,202.8 78.0,204.9 77.3,202.8 75.1,202.1 77.3,201.3" fill="#ffffff" opacity="0.53"/><polygon points="74.2,61.6 74.6,62.9 75.8,63.3 74.6,63.7 74.2,64.9 73.8,63.7 72.6,63.3 73.8,62.9" fill="#ffffff" opacity="0.58"/><polygon points="84.6,78.5 85.2,80.2 86.9,80.8 85.2,81.3 84.6,83.0 84.1,81.3 82.4,80.8 84.1,80.2" fill="#ffffff" opacity="0.77"/><polygon points="221.2,43.2 221.9,45.4 224.1,46.2 221.9,46.9 221.2,49.1 220.4,46.9 218.2,46.2 220.4,45.4" fill="#ffffff" opacity="0.50"/><polygon points="121.9,161.6 122.6,163.7 124.7,164.4 122.6,165.1 121.9,167.2 121.2,165.1 119.1,164.4 121.2,163.7" fill="#ffffff" opacity="0.64"/><polygon points="121.3,282.6 121.7,283.9 123.0,284.4 121.7,284.8 121.3,286.1 120.8,284.8 119.5,284.4 120.8,283.9" fill="#ffffff" opacity="0.72"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#7f8fd6" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#7f8fd6" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#2f3b7a">KING</text>
+  <g><path d="M57 260 V138 A68 68 0 0 1 193 138 V260Z" fill="#8fb2ec" opacity="0.28"/>
+      <path d="M83 126 L83 88 L104 108 L125 74 L146 108 L167 88 L167 126Z" fill="#4d5fb8"/>
+      <rect x="79" y="122" width="92" height="10" rx="3" fill="#4d5fb8"/>
+      <polygon points="125.0,96.0 127.3,101.7 133.0,104.0 127.3,106.3 125.0,112.0 122.7,106.3 117.0,104.0 122.7,101.7" fill="#8fb2ec"/>
+      <circle cx="99" cy="127" r="3" fill="#8fb2ec"/>
+      <circle cx="151" cy="127" r="3" fill="#8fb2ec"/><g transform="translate(125 202) rotate(0) scale(1.25)">
+    <path d="M-22 -28 H22 C22 -4 12 8 0 8 C-12 8 -22 -4 -22 -28Z" fill="#4d5fb8"/>
+    <ellipse cx="0" cy="-28" rx="22" ry="5" fill="#8fb2ec"/>
+    <rect x="-3" y="8" width="6" height="16" fill="#4d5fb8"/>
+    <path d="M-16 32 C-16 24 16 24 16 32Z" fill="#4d5fb8"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#2f3b7a">컵 왕</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#2f3b7a" opacity="0.8">KING OF CUPS</text>
+</svg>

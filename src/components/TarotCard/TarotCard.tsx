@@ -68,22 +68,15 @@ export const TarotCard: React.FC<TarotCardProps> = ({
             <div className="tarot-card__front-corner tarot-card__front-corner--bl"></div>
             <div className="tarot-card__front-corner tarot-card__front-corner--br"></div>
           </div>
-          <div className="tarot-card__front-content">
-            <div className="tarot-card__front-header">
-              <span className="tarot-card__front-ornament tarot-card__front-ornament--left">✦</span>
-              <span className="tarot-card__front-ornament tarot-card__front-ornament--right">✦</span>
-            </div>
-            <div className="tarot-card__front-image">
-              {/* 임시 이미지 - 실제로는 card.imageUrl 사용 */}
-              <div className="tarot-card__front-image-placeholder">
-                {card.type === 'major' ? '🦋' : '🌙'}
-              </div>
-            </div>
-            <div className="tarot-card__front-title">
-              <h3>{card.nameKo}</h3>
-              <p>{card.name}</p>
-            </div>
-          </div>
+          {/* 앞면이 보일 때만 이미지를 불러와 74장 동시 로딩을 피함 */}
+          {isFlipped && (
+            <img
+              className="tarot-card__front-photo"
+              src={card.imageUrl}
+              alt={`${card.nameKo} (${card.name})`}
+              draggable={false}
+            />
+          )}
         </div>
       </div>
 

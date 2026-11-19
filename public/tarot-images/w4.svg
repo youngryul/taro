@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffe4d6"/>
+      <stop offset="1" stop-color="#ffb3a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="207.1,33.7 207.9,36.3 210.6,37.2 207.9,38.0 207.1,40.7 206.2,38.0 203.6,37.2 206.2,36.3" fill="#ffffff" opacity="0.62"/><polygon points="159.0,136.2 159.4,137.4 160.5,137.7 159.4,138.1 159.0,139.3 158.6,138.1 157.5,137.7 158.6,137.4" fill="#ffffff" opacity="0.80"/><polygon points="158.2,180.1 159.1,183.0 162.0,184.0 159.1,185.0 158.2,187.9 157.2,185.0 154.3,184.0 157.2,183.0" fill="#ffffff" opacity="0.53"/><polygon points="62.6,42.8 63.1,44.2 64.4,44.6 63.1,45.1 62.6,46.4 62.2,45.1 60.9,44.6 62.2,44.2" fill="#ffffff" opacity="0.48"/><polygon points="160.7,240.7 161.5,243.3 164.1,244.1 161.5,244.9 160.7,247.5 159.9,244.9 157.3,244.1 159.9,243.3" fill="#ffffff" opacity="0.75"/><polygon points="57.6,223.6 58.5,226.1 61.0,227.0 58.5,227.8 57.6,230.4 56.8,227.8 54.2,227.0 56.8,226.1" fill="#ffffff" opacity="0.69"/><polygon points="222.5,144.2 223.1,146.0 224.8,146.5 223.1,147.1 222.5,148.9 221.9,147.1 220.1,146.5 221.9,146.0" fill="#ffffff" opacity="0.36"/><polygon points="143.7,95.9 144.1,97.3 145.5,97.8 144.1,98.2 143.7,99.6 143.2,98.2 141.8,97.8 143.2,97.3" fill="#ffffff" opacity="0.82"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#e0876f" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#e0876f" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#7a3426">IV</text>
+  <g><g transform="translate(89 118) rotate(0) scale(0.66)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(161 118) rotate(0) scale(0.66)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(89 218) rotate(0) scale(0.66)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(161 218) rotate(0) scale(0.66)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#7a3426">완드 4</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#7a3426" opacity="0.8">FOUR OF WANDS</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffe4d6"/>
+      <stop offset="1" stop-color="#ffb3a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="184.8,168.7 185.3,170.2 186.7,170.6 185.3,171.1 184.8,172.6 184.3,171.1 182.9,170.6 184.3,170.2" fill="#ffffff" opacity="0.73"/><polygon points="164.2,202.9 164.6,204.2 166.0,204.7 164.6,205.2 164.2,206.5 163.7,205.2 162.4,204.7 163.7,204.2" fill="#ffffff" opacity="0.50"/><polygon points="96.9,291.7 97.3,292.9 98.6,293.3 97.3,293.7 96.9,295.0 96.5,293.7 95.3,293.3 96.5,292.9" fill="#ffffff" opacity="0.70"/><polygon points="48.3,149.9 49.2,152.6 51.9,153.4 49.2,154.3 48.3,157.0 47.4,154.3 44.7,153.4 47.4,152.6" fill="#ffffff" opacity="0.72"/><polygon points="132.8,244.1 133.6,246.3 135.8,247.1 133.6,247.8 132.8,250.1 132.1,247.8 129.8,247.1 132.1,246.3" fill="#ffffff" opacity="0.68"/><polygon points="197.2,118.9 198.1,121.7 200.8,122.6 198.1,123.5 197.2,126.2 196.2,123.5 193.5,122.6 196.2,121.7" fill="#ffffff" opacity="0.80"/><polygon points="129.1,201.5 130.0,204.0 132.5,204.8 130.0,205.7 129.1,208.2 128.3,205.7 125.8,204.8 128.3,204.0" fill="#ffffff" opacity="0.36"/><polygon points="48.6,222.4 49.3,224.8 51.7,225.5 49.3,226.3 48.6,228.7 47.8,226.3 45.4,225.5 47.8,224.8" fill="#ffffff" opacity="0.81"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#e0876f" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#e0876f" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#7a3426">QUEEN</text>
+  <g><path d="M57 260 V138 A68 68 0 0 1 193 138 V260Z" fill="#f59a6e" opacity="0.28"/>
+      <path d="M89 124 L89 94 L107 110 L125 84 L143 110 L161 94 L161 124Z" fill="#c2553e"/>
+      <circle cx="125" cy="80" r="6" fill="#f59a6e"/>
+      <circle cx="89" cy="90" r="4" fill="#f59a6e"/>
+      <circle cx="161" cy="90" r="4" fill="#f59a6e"/><g transform="translate(125 202) rotate(0) scale(1.25)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#7a3426">완드 여왕</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#7a3426" opacity="0.8">QUEEN OF WANDS</text>
+</svg>

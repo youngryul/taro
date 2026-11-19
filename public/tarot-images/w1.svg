@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffe4d6"/>
+      <stop offset="1" stop-color="#ffb3a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="120.6,119.5 121.6,122.5 124.5,123.4 121.6,124.4 120.6,127.4 119.6,124.4 116.7,123.4 119.6,122.5" fill="#ffffff" opacity="0.59"/><polygon points="47.0,154.2 47.4,155.4 48.7,155.9 47.4,156.3 47.0,157.6 46.6,156.3 45.3,155.9 46.6,155.4" fill="#ffffff" opacity="0.73"/><polygon points="52.5,238.7 53.4,241.1 55.8,242.0 53.4,242.8 52.5,245.2 51.7,242.8 49.3,242.0 51.7,241.1" fill="#ffffff" opacity="0.42"/><polygon points="64.6,107.6 65.3,109.6 67.4,110.3 65.3,111.0 64.6,113.0 64.0,111.0 61.9,110.3 64.0,109.6" fill="#ffffff" opacity="0.77"/><polygon points="181.7,90.3 182.2,91.7 183.6,92.2 182.2,92.7 181.7,94.1 181.2,92.7 179.8,92.2 181.2,91.7" fill="#ffffff" opacity="0.54"/><polygon points="77.3,39.0 78.1,41.2 80.3,41.9 78.1,42.7 77.3,44.9 76.6,42.7 74.4,41.9 76.6,41.2" fill="#ffffff" opacity="0.36"/><polygon points="127.4,172.0 128.1,174.0 130.1,174.7 128.1,175.4 127.4,177.4 126.7,175.4 124.7,174.7 126.7,174.0" fill="#ffffff" opacity="0.46"/><polygon points="104.5,144.2 105.5,147.2 108.4,148.2 105.5,149.1 104.5,152.1 103.5,149.1 100.5,148.2 103.5,147.2" fill="#ffffff" opacity="0.66"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#e0876f" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#e0876f" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#7a3426">ACE</text>
+  <g>
+      <circle cx="125" cy="168" r="70" fill="#f59a6e" opacity="0.25"/>
+      <line x1="183.0" y1="168.0" x2="207.0" y2="168.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="178.6" y1="190.2" x2="200.8" y2="199.4" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="166.0" y1="209.0" x2="183.0" y2="226.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="147.2" y1="221.6" x2="156.4" y2="243.8" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="125.0" y1="226.0" x2="125.0" y2="250.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="102.8" y1="221.6" x2="93.6" y2="243.8" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="84.0" y1="209.0" x2="67.0" y2="226.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="71.4" y1="190.2" x2="49.2" y2="199.4" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="67.0" y1="168.0" x2="43.0" y2="168.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="71.4" y1="145.8" x2="49.2" y2="136.6" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="84.0" y1="127.0" x2="67.0" y2="110.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="102.8" y1="114.4" x2="93.6" y2="92.2" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="125.0" y1="110.0" x2="125.0" y2="86.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="147.2" y1="114.4" x2="156.4" y2="92.2" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="166.0" y1="127.0" x2="183.0" y2="110.0" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/><line x1="178.6" y1="145.8" x2="200.8" y2="136.6" stroke="#f59a6e" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(125 168) rotate(0) scale(1.75)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#7a3426">완드 에이스</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#7a3426" opacity="0.8">ACE OF WANDS</text>
+</svg>

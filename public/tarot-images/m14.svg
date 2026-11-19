@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#4a3a6e"/>
+      <stop offset="1" stop-color="#a8719c"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="157.2,68.5 158.0,71.0 160.5,71.8 158.0,72.6 157.2,75.0 156.4,72.6 153.9,71.8 156.4,71.0" fill="#fff4e6" opacity="0.50"/><polygon points="164.8,90.6 165.5,92.6 167.4,93.2 165.5,93.8 164.8,95.8 164.2,93.8 162.3,93.2 164.2,92.6" fill="#fff4e6" opacity="0.43"/><polygon points="116.6,125.7 117.2,127.7 119.2,128.3 117.2,129.0 116.6,131.0 115.9,129.0 113.9,128.3 115.9,127.7" fill="#fff4e6" opacity="0.49"/><polygon points="151.5,230.5 152.3,233.0 154.8,233.8 152.3,234.6 151.5,237.1 150.7,234.6 148.2,233.8 150.7,233.0" fill="#fff4e6" opacity="0.60"/><polygon points="138.8,279.0 139.5,281.2 141.7,281.9 139.5,282.6 138.8,284.8 138.1,282.6 135.9,281.9 138.1,281.2" fill="#fff4e6" opacity="0.76"/><polygon points="169.4,148.6 170.1,150.8 172.3,151.5 170.1,152.2 169.4,154.4 168.7,152.2 166.5,151.5 168.7,150.8" fill="#fff4e6" opacity="0.81"/><polygon points="196.9,262.9 197.4,264.5 199.0,265.0 197.4,265.5 196.9,267.1 196.4,265.5 194.8,265.0 196.4,264.5" fill="#fff4e6" opacity="0.48"/><polygon points="109.7,206.3 110.5,208.6 112.8,209.4 110.5,210.1 109.7,212.4 108.9,210.1 106.6,209.4 108.9,208.6" fill="#fff4e6" opacity="0.64"/><polygon points="22.7,232.1 23.1,233.5 24.5,233.9 23.1,234.4 22.7,235.8 22.2,234.4 20.8,233.9 22.2,233.5" fill="#fff4e6" opacity="0.44"/><polygon points="32.6,180.9 33.2,182.8 35.0,183.4 33.2,184.0 32.6,185.9 31.9,184.0 30.1,183.4 31.9,182.8" fill="#fff4e6" opacity="0.44"/><polygon points="169.6,207.4 170.2,209.2 171.9,209.7 170.2,210.3 169.6,212.1 169.0,210.3 167.3,209.7 169.0,209.2" fill="#fff4e6" opacity="0.51"/><polygon points="218.3,111.6 218.7,112.9 220.0,113.3 218.7,113.8 218.3,115.0 217.8,113.8 216.6,113.3 217.8,112.9" fill="#fff4e6" opacity="0.70"/><polygon points="195.6,40.5 196.1,42.3 197.9,42.8 196.1,43.4 195.6,45.2 195.0,43.4 193.2,42.8 195.0,42.3" fill="#fff4e6" opacity="0.62"/><polygon points="103.5,164.9 103.9,166.2 105.2,166.6 103.9,167.1 103.5,168.3 103.1,167.1 101.8,166.6 103.1,166.2" fill="#fff4e6" opacity="0.81"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#f3d48a" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#f3d48a" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#fff6e8">XIV</text>
+  <g>
+    <polygon points="125,76 145,110 105,110" fill="none" stroke="#f6d98f" stroke-width="4"/>
+    <g transform="translate(75 162) rotate(-25) scale(1.1)">
+    <path d="M-22 -28 H22 C22 -4 12 8 0 8 C-12 8 -22 -4 -22 -28Z" fill="#f6d98f"/>
+    <ellipse cx="0" cy="-28" rx="22" ry="5" fill="#f2b8d0"/>
+    <rect x="-3" y="8" width="6" height="16" fill="#f6d98f"/>
+    <path d="M-16 32 C-16 24 16 24 16 32Z" fill="#f6d98f"/></g>
+    <g transform="translate(175 218) rotate(15) scale(1.1)">
+    <path d="M-22 -28 H22 C22 -4 12 8 0 8 C-12 8 -22 -4 -22 -28Z" fill="#fff4e6"/>
+    <ellipse cx="0" cy="-28" rx="22" ry="5" fill="#f2b8d0"/>
+    <rect x="-3" y="8" width="6" height="16" fill="#fff4e6"/>
+    <path d="M-16 32 C-16 24 16 24 16 32Z" fill="#fff4e6"/></g>
+    <path d="M91 134 C135 128 165 158 169 188" fill="none" stroke="#f2b8d0" stroke-width="7" stroke-linecap="round" stroke-dasharray="1 10"/>
+    <path d="M91 134 C135 128 165 158 169 188" fill="none" stroke="#fff4e6" stroke-width="3" opacity="0.7"/></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(40,24,60,0.55)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#fff6e8">시간(절제)</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#fff6e8" opacity="0.8">TIME</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#4a3a6e"/>
+      <stop offset="1" stop-color="#a8719c"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="199.2,174.4 200.1,177.3 202.9,178.2 200.1,179.1 199.2,181.9 198.3,179.1 195.5,178.2 198.3,177.3" fill="#fff4e6" opacity="0.61"/><polygon points="131.0,154.9 131.6,157.0 133.7,157.7 131.6,158.4 131.0,160.4 130.3,158.4 128.2,157.7 130.3,157.0" fill="#fff4e6" opacity="0.59"/><polygon points="73.8,70.4 74.3,71.9 75.9,72.4 74.3,72.9 73.8,74.5 73.3,72.9 71.8,72.4 73.3,71.9" fill="#fff4e6" opacity="0.79"/><polygon points="185.2,235.0 185.7,236.7 187.4,237.3 185.7,237.8 185.2,239.5 184.6,237.8 182.9,237.3 184.6,236.7" fill="#fff4e6" opacity="0.63"/><polygon points="56.4,273.9 57.2,276.2 59.4,276.9 57.2,277.7 56.4,279.9 55.7,277.7 53.4,276.9 55.7,276.2" fill="#fff4e6" opacity="0.44"/><polygon points="212.3,173.9 212.9,175.7 214.7,176.3 212.9,176.9 212.3,178.8 211.7,176.9 209.8,176.3 211.7,175.7" fill="#fff4e6" opacity="0.68"/><polygon points="91.0,122.1 91.9,125.0 94.8,126.0 91.9,127.0 91.0,129.9 90.0,127.0 87.1,126.0 90.0,125.0" fill="#fff4e6" opacity="0.64"/><polygon points="202.7,68.9 203.1,70.3 204.6,70.7 203.1,71.2 202.7,72.6 202.2,71.2 200.8,70.7 202.2,70.3" fill="#fff4e6" opacity="0.62"/><polygon points="93.9,28.1 94.5,29.9 96.3,30.5 94.5,31.1 93.9,32.9 93.3,31.1 91.6,30.5 93.3,29.9" fill="#fff4e6" opacity="0.49"/><polygon points="164.7,94.7 165.1,95.9 166.3,96.2 165.1,96.6 164.7,97.8 164.3,96.6 163.2,96.2 164.3,95.9" fill="#fff4e6" opacity="0.63"/><polygon points="150.0,162.4 150.7,164.4 152.7,165.0 150.7,165.7 150.0,167.7 149.3,165.7 147.3,165.0 149.3,164.4" fill="#fff4e6" opacity="0.40"/><polygon points="215.3,284.7 215.9,286.5 217.7,287.1 215.9,287.7 215.3,289.5 214.7,287.7 212.9,287.1 214.7,286.5" fill="#fff4e6" opacity="0.43"/><polygon points="132.2,240.4 132.9,242.5 135.0,243.2 132.9,243.9 132.2,246.1 131.5,243.9 129.3,243.2 131.5,242.5" fill="#fff4e6" opacity="0.68"/><polygon points="119.9,47.8 120.8,50.5 123.5,51.4 120.8,52.3 119.9,55.0 119.0,52.3 116.3,51.4 119.0,50.5" fill="#fff4e6" opacity="0.53"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#f3d48a" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#f3d48a" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#fff6e8">XVI</text>
+  <g>
+    <rect x="95" y="128" width="60" height="132" fill="#fff4e6" opacity="0.9"/>
+    <rect x="95" y="114" width="14" height="14" fill="#fff4e6" opacity="0.9"/><rect x="115" y="114" width="14" height="14" fill="#fff4e6" opacity="0.9"/><rect x="135" y="114" width="14" height="14" fill="#fff4e6" opacity="0.9"/>
+    <rect x="115" y="218" width="20" height="42" rx="10" fill="#4a3a6e"/>
+    <rect x="119" y="156" width="12" height="18" rx="6" fill="#f6d98f"/>
+    <polygon points="195,72 145,128 169,128 131,182 189,114 165,114" fill="#f6d98f"/>
+    <rect x="67" y="158" width="12" height="8" fill="#f2b8d0" transform="rotate(-58 67 158)"/><rect x="55" y="198" width="12" height="8" fill="#f2b8d0" transform="rotate(-70 55 198)"/><rect x="177" y="208" width="12" height="8" fill="#f2b8d0" transform="rotate(52 177 208)"/><rect x="189" y="242" width="12" height="8" fill="#f2b8d0" transform="rotate(64 189 242)"/></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(40,24,60,0.55)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#fff6e8">탑</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#fff6e8" opacity="0.8">THE TOWER</text>
+</svg>

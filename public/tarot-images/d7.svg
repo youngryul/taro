@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#eef6dc"/>
+      <stop offset="1" stop-color="#f2dea6"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="72.6,46.1 73.1,47.5 74.5,48.0 73.1,48.5 72.6,49.9 72.1,48.5 70.7,48.0 72.1,47.5" fill="#ffffff" opacity="0.80"/><polygon points="59.3,21.0 60.2,23.8 63.0,24.8 60.2,25.7 59.3,28.5 58.3,25.7 55.5,24.8 58.3,23.8" fill="#ffffff" opacity="0.59"/><polygon points="107.6,104.6 108.4,107.2 111.1,108.1 108.4,109.0 107.6,111.6 106.7,109.0 104.1,108.1 106.7,107.2" fill="#ffffff" opacity="0.37"/><polygon points="153.0,215.9 153.5,217.3 154.8,217.7 153.5,218.2 153.0,219.6 152.6,218.2 151.2,217.7 152.6,217.3" fill="#ffffff" opacity="0.39"/><polygon points="205.6,42.9 206.5,45.6 209.1,46.5 206.5,47.3 205.6,50.0 204.7,47.3 202.0,46.5 204.7,45.6" fill="#ffffff" opacity="0.44"/><polygon points="89.2,141.6 89.6,142.9 90.9,143.3 89.6,143.8 89.2,145.1 88.7,143.8 87.4,143.3 88.7,142.9" fill="#ffffff" opacity="0.80"/><polygon points="37.3,32.0 38.1,34.5 40.6,35.3 38.1,36.2 37.3,38.7 36.5,36.2 34.0,35.3 36.5,34.5" fill="#ffffff" opacity="0.68"/><polygon points="119.9,77.6 120.7,80.0 123.2,80.8 120.7,81.6 119.9,84.1 119.1,81.6 116.7,80.8 119.1,80.0" fill="#ffffff" opacity="0.41"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#b49a4c" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#b49a4c" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#55491c">VII</text>
+  <g><g transform="translate(89 88) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(161 88) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(125 128) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(89 168) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(161 168) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(89 248) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g><g transform="translate(161 248) rotate(0) scale(0.52)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#55491c">디스크 7</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#55491c" opacity="0.8">SEVEN OF DISKS</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#eef6dc"/>
+      <stop offset="1" stop-color="#f2dea6"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="215.4,175.6 215.9,177.0 217.3,177.5 215.9,178.0 215.4,179.5 214.9,178.0 213.5,177.5 214.9,177.0" fill="#ffffff" opacity="0.60"/><polygon points="148.7,271.0 149.4,273.1 151.5,273.8 149.4,274.5 148.7,276.6 148.0,274.5 145.9,273.8 148.0,273.1" fill="#ffffff" opacity="0.47"/><polygon points="144.1,135.2 144.5,136.5 145.7,136.9 144.5,137.3 144.1,138.5 143.7,137.3 142.4,136.9 143.7,136.5" fill="#ffffff" opacity="0.67"/><polygon points="27.8,151.1 28.7,153.6 31.2,154.5 28.7,155.3 27.8,157.9 27.0,155.3 24.4,154.5 27.0,153.6" fill="#ffffff" opacity="0.67"/><polygon points="32.1,149.8 32.8,151.8 34.8,152.5 32.8,153.1 32.1,155.1 31.5,153.1 29.5,152.5 31.5,151.8" fill="#ffffff" opacity="0.62"/><polygon points="152.3,278.7 152.7,280.0 154.0,280.4 152.7,280.9 152.3,282.2 151.8,280.9 150.5,280.4 151.8,280.0" fill="#ffffff" opacity="0.76"/><polygon points="178.3,92.2 178.7,93.6 180.1,94.1 178.7,94.5 178.3,95.9 177.8,94.5 176.4,94.1 177.8,93.6" fill="#ffffff" opacity="0.44"/><polygon points="106.7,62.2 107.2,63.9 108.9,64.4 107.2,65.0 106.7,66.6 106.1,65.0 104.5,64.4 106.1,63.9" fill="#ffffff" opacity="0.35"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#b49a4c" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#b49a4c" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#55491c">QUEEN</text>
+  <g><path d="M57 260 V138 A68 68 0 0 1 193 138 V260Z" fill="#c8b25e" opacity="0.28"/>
+      <path d="M89 124 L89 94 L107 110 L125 84 L143 110 L161 94 L161 124Z" fill="#8a7524"/>
+      <circle cx="125" cy="80" r="6" fill="#c8b25e"/>
+      <circle cx="89" cy="90" r="4" fill="#c8b25e"/>
+      <circle cx="161" cy="90" r="4" fill="#c8b25e"/><g transform="translate(125 202) rotate(0) scale(1.25)">
+    <circle r="27" fill="#8a7524"/>
+    <circle r="21" fill="none" stroke="#c8b25e" stroke-width="2"/>
+    <polygon points="0.0,-14.0 4.1,-6.1 13.0,-6.5 8.3,1.0 13.0,8.5 4.1,8.1 0.0,16.0 -4.1,8.1 -13.0,8.5 -8.3,1.0 -13.0,-6.5 -4.1,-6.1" fill="#c8b25e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#55491c">디스크 여왕</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#55491c" opacity="0.8">QUEEN OF DISKS</text>
+</svg>

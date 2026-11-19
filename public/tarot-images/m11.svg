@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#4a3a6e"/>
+      <stop offset="1" stop-color="#a8719c"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="107.3,247.9 108.1,250.1 110.3,250.8 108.1,251.5 107.3,253.8 106.6,251.5 104.4,250.8 106.6,250.1" fill="#fff4e6" opacity="0.44"/><polygon points="197.6,101.5 198.4,103.9 200.9,104.7 198.4,105.5 197.6,107.9 196.8,105.5 194.4,104.7 196.8,103.9" fill="#fff4e6" opacity="0.45"/><polygon points="140.6,85.7 141.4,88.0 143.8,88.8 141.4,89.6 140.6,92.0 139.8,89.6 137.4,88.8 139.8,88.0" fill="#fff4e6" opacity="0.83"/><polygon points="217.4,84.4 218.1,86.7 220.4,87.5 218.1,88.2 217.4,90.5 216.6,88.2 214.4,87.5 216.6,86.7" fill="#fff4e6" opacity="0.56"/><polygon points="206.8,179.0 207.8,181.9 210.6,182.8 207.8,183.8 206.8,186.6 205.9,183.8 203.0,182.8 205.9,181.9" fill="#fff4e6" opacity="0.68"/><polygon points="91.0,83.9 91.6,85.5 93.1,86.0 91.6,86.5 91.0,88.1 90.5,86.5 89.0,86.0 90.5,85.5" fill="#fff4e6" opacity="0.45"/><polygon points="214.1,290.0 214.5,291.4 215.9,291.8 214.5,292.3 214.1,293.7 213.6,292.3 212.3,291.8 213.6,291.4" fill="#fff4e6" opacity="0.42"/><polygon points="157.2,172.5 158.2,175.4 161.2,176.4 158.2,177.4 157.2,180.3 156.3,177.4 153.3,176.4 156.3,175.4" fill="#fff4e6" opacity="0.44"/><polygon points="204.6,140.1 205.5,142.7 208.1,143.5 205.5,144.4 204.6,147.0 203.8,144.4 201.2,143.5 203.8,142.7" fill="#fff4e6" opacity="0.80"/><polygon points="194.7,217.3 195.4,219.5 197.6,220.3 195.4,221.0 194.7,223.2 194.0,221.0 191.8,220.3 194.0,219.5" fill="#fff4e6" opacity="0.35"/><polygon points="162.0,115.3 162.7,117.2 164.6,117.9 162.7,118.5 162.0,120.5 161.4,118.5 159.4,117.9 161.4,117.2" fill="#fff4e6" opacity="0.65"/><polygon points="197.2,178.1 198.1,180.8 200.8,181.8 198.1,182.7 197.2,185.4 196.3,182.7 193.5,181.8 196.3,180.8" fill="#fff4e6" opacity="0.84"/><polygon points="89.5,153.0 90.1,154.7 91.8,155.3 90.1,155.8 89.5,157.5 89.0,155.8 87.3,155.3 89.0,154.7" fill="#fff4e6" opacity="0.59"/><polygon points="225.0,193.3 225.7,195.4 227.7,196.1 225.7,196.7 225.0,198.8 224.3,196.7 222.3,196.1 224.3,195.4" fill="#fff4e6" opacity="0.37"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#f3d48a" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#f3d48a" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#fff6e8">XI</text>
+  <g>
+    <line x1="125" y1="78" x2="125" y2="258" stroke="#fff4e6" stroke-width="5"/>
+    <path d="M118 78 L125 64 L132 78Z" fill="#fff4e6"/>
+    <line x1="49" y1="124" x2="201" y2="124" stroke="#f6d98f" stroke-width="6" stroke-linecap="round"/>
+    <line x1="53" y1="124" x2="75" y2="188" stroke="#f6d98f" stroke-width="2"/><line x1="53" y1="124" x2="31" y2="188" stroke="#f6d98f" stroke-width="2"/><path d="M27 188 Q53 214 79 188Z" fill="#f6d98f"/><line x1="197" y1="124" x2="175" y2="188" stroke="#f6d98f" stroke-width="2"/><line x1="197" y1="124" x2="219" y2="188" stroke="#f6d98f" stroke-width="2"/><path d="M171 188 Q197 214 223 188Z" fill="#f6d98f"/>
+    <path d="M95 260 H155 L145 244 H105Z" fill="#f2b8d0"/></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(40,24,60,0.55)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#fff6e8">업보(정의)</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#fff6e8" opacity="0.8">KARMA</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#ffe4d6"/>
+      <stop offset="1" stop-color="#ffb3a7"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="56.9,160.8 57.6,162.9 59.7,163.6 57.6,164.3 56.9,166.5 56.2,164.3 54.0,163.6 56.2,162.9" fill="#ffffff" opacity="0.67"/><polygon points="145.6,116.8 146.5,119.5 149.3,120.4 146.5,121.3 145.6,124.0 144.8,121.3 142.0,120.4 144.8,119.5" fill="#ffffff" opacity="0.72"/><polygon points="181.3,108.3 182.1,110.7 184.4,111.5 182.1,112.2 181.3,114.6 180.5,112.2 178.1,111.5 180.5,110.7" fill="#ffffff" opacity="0.82"/><polygon points="135.0,179.2 135.5,181.0 137.3,181.6 135.5,182.2 135.0,183.9 134.4,182.2 132.6,181.6 134.4,181.0" fill="#ffffff" opacity="0.47"/><polygon points="149.5,243.2 150.3,245.5 152.7,246.3 150.3,247.1 149.5,249.5 148.7,247.1 146.4,246.3 148.7,245.5" fill="#ffffff" opacity="0.73"/><polygon points="45.1,163.3 45.8,165.4 47.8,166.0 45.8,166.7 45.1,168.7 44.4,166.7 42.4,166.0 44.4,165.4" fill="#ffffff" opacity="0.36"/><polygon points="151.9,132.3 152.7,134.6 155.0,135.4 152.7,136.2 151.9,138.5 151.1,136.2 148.8,135.4 151.1,134.6" fill="#ffffff" opacity="0.57"/><polygon points="90.1,259.4 90.7,261.2 92.4,261.8 90.7,262.3 90.1,264.1 89.5,262.3 87.8,261.8 89.5,261.2" fill="#ffffff" opacity="0.80"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#e0876f" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#e0876f" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#7a3426">VIII</text>
+  <g><g transform="translate(89 86) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(161 86) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(89 141) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(161 141) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(89 195) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(161 195) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(89 250) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g><g transform="translate(161 250) rotate(0) scale(0.52)">
+    <rect x="-4" y="-30" width="8" height="62" rx="4" fill="#c2553e"/>
+    <path d="M0 -30 C-10 -40 -6 -50 0 -56 C6 -50 10 -40 0 -30Z" fill="#f59a6e"/>
+    <path d="M4 -12 C14 -18 18 -12 16 -6 C10 -4 6 -8 4 -12Z" fill="#f59a6e"/>
+    <path d="M-4 6 C-14 0 -18 6 -16 12 C-10 14 -6 10 -4 6Z" fill="#f59a6e"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#7a3426">완드 8</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#7a3426" opacity="0.8">EIGHT OF WANDS</text>
+</svg>

@@ -1,0 +1,341 @@
+.ask-tarot {
+  height: 100%;
+  overflow-y: auto;
+  padding: 24px 16px 48px;
+  background: linear-gradient(135deg, #f5e6e6 0%, #f0d8d8 40%, #f5e6e6 100%);
+  color: #6b4a55;
+}
+
+.ask-tarot__panel,
+.ask-tarot__result {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ask-tarot__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(214, 86, 140, 0.95);
+  letter-spacing: 1px;
+}
+
+.ask-tarot__categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ask-tarot__chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(255, 182, 193, 0.7);
+  background: rgba(255, 255, 255, 0.7);
+  color: #b24a7a;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ask-tarot__chip:hover {
+  background: #fff;
+}
+
+.ask-tarot__chip--active {
+  background: linear-gradient(135deg, #ff9ec1 0%, #ffb6c8 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(255, 140, 180, 0.35);
+}
+
+.ask-tarot__input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1.5px solid rgba(255, 182, 193, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  font: inherit;
+  font-size: 16px;
+  color: #4a3a40;
+  resize: vertical;
+  outline: none;
+}
+
+.ask-tarot__input:focus {
+  border-color: #ff8fb8;
+  box-shadow: 0 0 0 4px rgba(255, 160, 195, 0.2);
+}
+
+.ask-tarot__spreads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.ask-tarot__spread {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1.5px solid rgba(255, 182, 193, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  color: #8a5468;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.ask-tarot__spread strong {
+  font-size: 15px;
+  color: #c04d82;
+}
+
+.ask-tarot__spread span {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.ask-tarot__spread--active {
+  background: #fff;
+  border-color: #ff8fb8;
+  box-shadow: 0 4px 14px rgba(255, 140, 180, 0.25);
+}
+
+.ask-tarot__primary,
+.ask-tarot__secondary {
+  padding: 14px 24px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.ask-tarot__primary {
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, #ff8fb8 0%, #ffaec9 100%);
+  box-shadow: 0 6px 20px rgba(255, 120, 170, 0.35);
+}
+
+.ask-tarot__primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.ask-tarot__primary:not(:disabled):hover,
+.ask-tarot__secondary:hover {
+  transform: translateY(-2px);
+}
+
+.ask-tarot__secondary {
+  border: 1.5px solid rgba(255, 143, 184, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  color: #c04d82;
+}
+
+.ask-tarot__hint {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.ask-tarot__link {
+  background: none;
+  border: none;
+  color: #c04d82;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+}
+
+/* ───── 카드 고르기 ───── */
+
+.ask-tarot__draw {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ask-tarot__draw-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 300;
+  padding-bottom: 8px;
+}
+
+.ask-tarot__draw-header .ask-tarot__link {
+  align-self: flex-start;
+}
+
+.ask-tarot__draw-question {
+  font-size: 17px;
+  font-weight: 500;
+  color: #8a3f63;
+}
+
+.ask-tarot__draw-status {
+  font-size: 14px;
+  color: #d6568c;
+}
+
+.ask-tarot__circle {
+  position: relative;
+  flex: 1;
+  min-height: 420px;
+}
+
+/* ───── 결과 ───── */
+
+.ask-tarot__result-question {
+  text-align: center;
+  font-size: 17px;
+  color: #8a3f63;
+}
+
+.reading-cards {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.reading-cards__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: readingCardIn 0.7s ease-out backwards;
+}
+
+.reading-cards__item img {
+  width: 150px;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(160, 80, 110, 0.25);
+  background: #fff;
+}
+
+.reading-cards--sm .reading-cards__item img {
+  width: 84px;
+}
+
+.reading-cards__item figcaption {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d6568c;
+}
+
+@keyframes readingCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.ask-tarot__headline {
+  text-align: center;
+  font-size: 20px;
+  color: #b2416f;
+}
+
+.ask-tarot__block {
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 16px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 16px rgba(200, 120, 150, 0.12);
+  line-height: 1.75;
+  font-size: 15px;
+  color: #4a3a40;
+}
+
+.ask-tarot__block h4 {
+  font-size: 15px;
+  color: #b2416f;
+  margin-bottom: 6px;
+}
+
+.ask-tarot__block--advice {
+  background: linear-gradient(135deg, rgba(255, 245, 250, 0.95) 0%, rgba(255, 232, 240, 0.95) 100%);
+  border: 1px solid rgba(255, 170, 200, 0.6);
+}
+
+.ask-tarot__block--improved {
+  border: 1px solid rgba(255, 170, 200, 0.8);
+}
+
+.ask-tarot__pre {
+  white-space: pre-wrap;
+}
+
+.ask-tarot__badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #ffe1ec;
+  color: #c04d82;
+  font-size: 12px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.ask-tarot__feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.ask-tarot__thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 182, 193, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ask-tarot__thumb--active {
+  background: #ffd6e5;
+  border-color: #ff8fb8;
+}
+
+.ask-tarot__actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .ask-tarot__spreads {
+    grid-template-columns: 1fr;
+  }
+
+  .reading-cards__item img {
+    width: 96px;
+  }
+
+  .ask-tarot__circle {
+    min-height: 360px;
+  }
+}

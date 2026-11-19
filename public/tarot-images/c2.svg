@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 375" width="250" height="375">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#e3efff"/>
+      <stop offset="1" stop-color="#c3c9f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="375" rx="16" fill="url(#bg)"/>
+  <polygon points="121.0,239.5 121.5,240.9 122.8,241.3 121.5,241.8 121.0,243.1 120.6,241.8 119.2,241.3 120.6,240.9" fill="#ffffff" opacity="0.37"/><polygon points="36.9,247.3 37.5,249.1 39.3,249.6 37.5,250.2 36.9,252.0 36.3,250.2 34.6,249.6 36.3,249.1" fill="#ffffff" opacity="0.39"/><polygon points="56.7,269.1 57.1,270.4 58.4,270.8 57.1,271.2 56.7,272.4 56.3,271.2 55.1,270.8 56.3,270.4" fill="#ffffff" opacity="0.68"/><polygon points="222.2,36.3 223.1,38.8 225.6,39.7 223.1,40.5 222.2,43.1 221.4,40.5 218.8,39.7 221.4,38.8" fill="#ffffff" opacity="0.84"/><polygon points="171.7,152.9 172.3,155.0 174.5,155.7 172.3,156.4 171.7,158.5 171.0,156.4 168.8,155.7 171.0,155.0" fill="#ffffff" opacity="0.60"/><polygon points="30.6,221.5 31.6,224.5 34.5,225.4 31.6,226.4 30.6,229.3 29.7,226.4 26.8,225.4 29.7,224.5" fill="#ffffff" opacity="0.47"/><polygon points="192.4,275.1 193.1,277.3 195.3,278.0 193.1,278.8 192.4,281.0 191.6,278.8 189.4,278.0 191.6,277.3" fill="#ffffff" opacity="0.73"/><polygon points="79.2,248.2 79.6,249.5 80.9,249.9 79.6,250.4 79.2,251.7 78.8,250.4 77.5,249.9 78.8,249.5" fill="#ffffff" opacity="0.61"/>
+  <rect x="9" y="9" width="232" height="357" rx="11" fill="none" stroke="#7f8fd6" stroke-width="2.5"/>
+  <rect x="15" y="15" width="220" height="345" rx="8" fill="none" stroke="#7f8fd6" stroke-width="1" opacity="0.7"/>
+  <text x="125" y="44" text-anchor="middle" font-family="Georgia,serif" font-size="17" letter-spacing="3" fill="#2f3b7a">II</text>
+  <g><g transform="translate(125 113) rotate(0) scale(0.8)">
+    <path d="M-22 -28 H22 C22 -4 12 8 0 8 C-12 8 -22 -4 -22 -28Z" fill="#4d5fb8"/>
+    <ellipse cx="0" cy="-28" rx="22" ry="5" fill="#8fb2ec"/>
+    <rect x="-3" y="8" width="6" height="16" fill="#4d5fb8"/>
+    <path d="M-16 32 C-16 24 16 24 16 32Z" fill="#4d5fb8"/></g><g transform="translate(125 223) rotate(0) scale(0.8)">
+    <path d="M-22 -28 H22 C22 -4 12 8 0 8 C-12 8 -22 -4 -22 -28Z" fill="#4d5fb8"/>
+    <ellipse cx="0" cy="-28" rx="22" ry="5" fill="#8fb2ec"/>
+    <rect x="-3" y="8" width="6" height="16" fill="#4d5fb8"/>
+    <path d="M-16 32 C-16 24 16 24 16 32Z" fill="#4d5fb8"/></g></g>
+  <rect x="26" y="293" width="198" height="52" rx="10" fill="rgba(255,255,255,0.6)"/>
+  <text x="125" y="321" text-anchor="middle" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif" font-size="19" font-weight="700" fill="#2f3b7a">컵 2</text>
+  <text x="125" y="338" text-anchor="middle" font-family="Georgia,serif" font-size="10.5" letter-spacing="1.5" fill="#2f3b7a" opacity="0.8">TWO OF CUPS</text>
+</svg>
