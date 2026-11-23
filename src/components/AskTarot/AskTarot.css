@@ -256,6 +256,18 @@
   color: #b2416f;
 }
 
+.ask-tarot__ai-status {
+  text-align: center;
+  font-size: 14px;
+  color: #8a6a7c;
+  animation: ask-tarot-ai-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes ask-tarot-ai-pulse {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+
 .ask-tarot__block {
   background: rgba(255, 255, 255, 0.78);
   border-radius: 16px;

@@ -7,8 +7,10 @@ import { CATEGORIES, CATEGORY_BY_ID, CategoryId, SPREADS, SPREAD_BY_ID, SpreadId
 import { cardImageUrl } from '../../data/universalTarot';
 import { ENGINE_VERSION, generateReading } from '../../services/readingEngine';
 import {
-  addReading, newId, overridesStore, Reading, readingsStore, updateReading, useStore,
+  addReading, newId, overridesStore, Reading, readingsStore, saveFeedback, saveReadingAi,
+  setReadingUiState, useStore,
 } from '../../services/storage';
+import { generateAiReading, isAiReadingEnabled } from '../../services/aiReading';
 
 type Step = 'question' | 'draw' | 'result';
 
@@ -51,10 +53,22 @@ export const AskTarot: React.FC = () => {
       result,
       engineVersion: ENGINE_VERSION,
       review: { status: 'new' },
+      aiStatus: isAiReadingEnabled() ? 'pending' : undefined,
     };
-    addReading(record);
+    // 규칙 엔진 답변을 바로 보여 주며 서버에 저장하고,
+    // AI 답변이 오면 화면을 교체한 뒤 같은 행에 AI 답변을 추가 저장
+    const saved = addReading(record);
     setReadingId(record.id);
     setStep('result');
+
+    if (!isAiReadingEnabled()) return;
+    const ai = generateAiReading({ question, category, spread: spreadId, cards: drawn, base: result });
+    Promise.all([saved, ai])
+      .then(([, answer]) => saveReadingAi(record.id, answer))
+      .catch((err) => {
+        console.warn('AI 답변 생성 실패, 기본 해석을 사용합니다:', err);
+        setReadingUiState(record.id, { aiStatus: 'failed' });
+      });
   };
 
   const reset = (keepQuestion: boolean) => {
@@ -229,7 +243,8 @@ export const ReadingCards: React.FC<{ reading: Reading; size?: 'md' | 'sm' }> = 
 );
 
 const ReadingView: React.FC<ReadingViewProps> = ({ reading, onAgain, onNew }) => {
-  const { result } = reading;
+  const result = reading.ai?.result ?? reading.result;
+  const aiPending = reading.aiStatus === 'pending';
   const improved = reading.review.improvedAnswer?.trim();
 
   return (
@@ -240,6 +255,9 @@ const ReadingView: React.FC<ReadingViewProps> = ({ reading, onAgain, onNew }) =>
       <ReadingCards reading={reading} />
 
       <h3 className="ask-tarot__headline">{result.headline}</h3>
+      {aiPending && !improved && (
+        <p className="ask-tarot__ai-status">✦ 타로 리더가 당신의 질문에 맞춰 해석을 다듬고 있어요...</p>
+      )}
 
       {improved ? (
         <article className="ask-tarot__block ask-tarot__block--improved">
@@ -274,7 +292,7 @@ const ReadingView: React.FC<ReadingViewProps> = ({ reading, onAgain, onNew }) =>
             key={v}
             type="button"
             className={`ask-tarot__thumb ${reading.userFeedback === v ? 'ask-tarot__thumb--active' : ''}`}
-            onClick={() => updateReading(reading.id, { userFeedback: reading.userFeedback === v ? undefined : v })}
+            onClick={() => saveFeedback(reading.id, reading.userFeedback === v ? undefined : v)}
             aria-label={v === 'up' ? '도움이 됐어요' : '아쉬워요'}
           >
             {v === 'up' ? '👍' : '👎'}

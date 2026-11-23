@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { 
   drawTodayTarot, 
-  saveTarotReading, 
-  linkGuestReadingsToUser,
-  TodayTarotResult 
+  saveTarotReading,
+  TodayTarotResult
 } from '../../services/tarotService';
-import { getGuestId } from '../../utils/guestId';
 import { LoginModal } from '../Auth/LoginModal';
 import { PaymentLock } from '../Auth/PaymentLock';
 import { TarotCard as TarotCardComponent } from '../TarotCard/TarotCard';
@@ -56,26 +54,7 @@ export const TodayFortuneWithAuth: React.FC = () => {
     }
   }, [user?.id, authLoading]);
 
-  // 로그인 후 게스트 결과 연결
-  useEffect(() => {
-    const linkGuestData = async () => {
-      if (isAuthenticated && user?.id) {
-        const guestId = getGuestId();
-        if (guestId) {
-          try {
-            await linkGuestReadingsToUser(user.id, guestId);
-            // 연결 후 다시 로드
-            const result = await drawTodayTarot(user.id);
-            setTarotResult(result);
-          } catch (error) {
-            console.error('게스트 데이터 연결 오류:', error);
-          }
-        }
-      }
-    };
-
-    linkGuestData();
-  }, [isAuthenticated, user?.id]);
+  // 로그인 전(익명 계정) 결과 연결은 AuthContext 가 로그인 직후 처리한 뒤 user 를 넘겨줍니다.
 
   // 타로 저장하기
   const handleSaveTarot = async () => {

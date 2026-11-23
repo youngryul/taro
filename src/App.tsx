@@ -7,7 +7,8 @@ import { HealingMessage } from './components/HealingMessage/HealingMessage';
 import { TarotAdvice } from './components/TarotAdvice/TarotAdvice';
 import { Statistics } from './components/Statistics/Statistics';
 import { DevMode } from './components/DevMode/DevMode';
-import { devModeStore, useStore } from './services/storage';
+import { devModeStore, loadIsAdmin, loadOverrides, resetUserData, useStore } from './services/storage';
+import { useAuth } from './contexts/AuthContext';
 import { TarotHistory } from './components/TarotHistory/TarotHistory';
 import { supabase } from './lib/supabase';
 import './App.css';
@@ -22,9 +23,18 @@ const urlRequestsDevMode = () =>
  */
 const App: React.FC = () => {
   const devMode = useStore(devModeStore);
+  const { uid } = useAuth();
   const [currentSection, setCurrentSection] = useState<Section>(
     urlRequestsDevMode() ? 'dev' : 'fortune'
   );
+
+  // 계정(익명 포함)이 정해지면 서버에서 카드 해석 보완·관리자 여부를 불러옴
+  useEffect(() => {
+    resetUserData();
+    if (!uid) return;
+    loadOverrides();
+    loadIsAdmin(uid).then((admin) => admin && devModeStore.set(true));
+  }, [uid]);
 
   useEffect(() => {
     const sync = () => urlRequestsDevMode() && devModeStore.set(true);

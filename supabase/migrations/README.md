@@ -5,7 +5,7 @@
 ### 1. Supabase Dashboard에서 실행
 
 1. Supabase Dashboard → SQL Editor 이동
-2. `001_insert_tarot_cards.sql` 파일 내용을 복사하여 실행
+2. `000_tarot_base_schema.sql` → `001_insert_tarot_cards.sql` → `002_tarot_question_readings.sql` 순서로 실행
 3. 실행 결과 확인
 
 ### 2. Supabase CLI 사용 (선택사항)
@@ -25,6 +25,9 @@ supabase db push
 ```
 
 ## 마이그레이션 파일 설명
+
+### `000_tarot_base_schema.sql`
+- `tarot_cards`, `tarot_readings` 테이블과 RLS 정책 (001 보다 먼저 실행)
 
 ### `001_insert_tarot_cards.sql`
 - 타로 카드 데이터 삽입

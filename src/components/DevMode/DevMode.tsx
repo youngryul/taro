@@ -1,13 +1,14 @@
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import './DevMode.css';
 import { ReadingCards } from '../AskTarot/AskTarot';
 import { ALL_CARDS, CARD_BY_KEY, cardImageUrl } from '../../data/universalTarot';
 import { CATEGORIES, CATEGORY_BY_ID, CategoryId, SPREAD_BY_ID } from '../../data/knowledge';
 import { ENGINE_VERSION, generateReading, readingToText } from '../../services/readingEngine';
 import {
-  deleteReading, devModeStore, exportAll, importAll, overridesStore, Reading, readingsStore,
-  ReviewStatus, saveCardOverride, updateReading, updateReview, useStore,
+  deleteReading, devModeStore, exportAll, importAll, isAdminStore, loadReadings, overridesStore,
+  Reading, readingsStore, replaceReadingResult, ReviewStatus, saveCardOverride, updateReview, useStore,
 } from '../../services/storage';
+import { useAuth } from '../../contexts/AuthContext';
 
 type Tab = 'readings' | 'cards' | 'stats' | 'backup';
 
@@ -29,6 +30,16 @@ const formatDate = (t: number) =>
 export const DevMode: React.FC = () => {
   const [tab, setTab] = useState<Tab>('readings');
   const [focusCard, setFocusCard] = useState<string>('m0');
+  const [loading, setLoading] = useState(true);
+  const isAdmin = useStore(isAdminStore);
+  const { uid } = useAuth();
+
+  // 관리자면 전체 답변, 아니면 내 답변만 (RLS 가 결정)
+  useEffect(() => {
+    if (!uid) return;
+    setLoading(true);
+    loadReadings().finally(() => setLoading(false));
+  }, [uid, isAdmin]);
 
   const openCard = (key: string) => {
     setFocusCard(key);
@@ -60,6 +71,15 @@ export const DevMode: React.FC = () => {
           개발자 모드 끄기
         </button>
       </header>
+
+      {!isAdmin && (
+        <div className="dev__review dev__notice">
+          <h4>관리자 권한이 없습니다 — 지금은 내 답변만 보이고, 검토·카드 해석 저장은 서버에서 거부됩니다.</h4>
+          <p className="dev__muted">Supabase SQL Editor 에서 아래를 실행한 뒤 새로고침하세요.</p>
+          <pre className="dev__pre">{`insert into public.tarot_admins (user_id) values ('${uid ?? '로그인 세션 없음 — Anonymous sign-ins 를 켜 주세요'}');`}</pre>
+        </div>
+      )}
+      {loading && <p className="dev__muted">서버에서 불러오는 중...</p>}
 
       <div className="dev__body">
         {tab === 'readings' && <ReadingsTab onOpenCard={openCard} />}
@@ -197,6 +217,12 @@ const ReadingDetail: React.FC<{ reading: Reading; onOpenCard: (key: string) => v
         <div>
           <h4>생성된 답변 {reading.userFeedback && <small>(사용자 {reading.userFeedback === 'up' ? '👍' : '👎'})</small>}</h4>
           <pre className="dev__pre">{currentText}</pre>
+          {reading.ai && (
+            <>
+              <h4>AI 답변 <small>({reading.ai.model}) · 사용자에게 보여진 답변</small></h4>
+              <pre className="dev__pre">{readingToText(reading.ai.result)}</pre>
+            </>
+          )}
         </div>
         <div>
           <h4>
@@ -207,7 +233,7 @@ const ReadingDetail: React.FC<{ reading: Reading; onOpenCard: (key: string) => v
             <button
               type="button"
               className="dev__btn"
-              onClick={() => updateReading(reading.id, { result: regenerated, engineVersion: ENGINE_VERSION })}
+              onClick={() => replaceReadingResult(reading.id, regenerated, ENGINE_VERSION)}
             >
               재생성 답변으로 교체
             </button>
@@ -515,13 +541,21 @@ const BackupTab: React.FC = () => {
     URL.revokeObjectURL(url);
   };
 
-  const onFile = async (file: File | undefined, mode: 'merge' | 'replace') => {
+  const onFile = async (file: File | undefined) => {
     if (!file) return;
+    let bundle;
     try {
-      importAll(JSON.parse(await file.text()), mode);
-      setMessage(`가져오기 완료 (${mode === 'merge' ? '합치기' : '덮어쓰기'})`);
+      bundle = JSON.parse(await file.text());
     } catch {
       setMessage('JSON 파일을 읽지 못했습니다.');
+      return;
+    }
+    try {
+      setMessage('서버에 올리는 중...');
+      const n = await importAll(bundle);
+      setMessage(`가져오기 완료 — 답변 ${n.readings}건, 카드 해석 ${n.overrides}건 (중복 답변은 건너뜀)`);
+    } catch (e) {
+      setMessage(`서버 저장 실패: ${(e as Error).message}`);
     }
   };
 
@@ -530,23 +564,20 @@ const BackupTab: React.FC = () => {
       <div className="dev__review">
         <h4>내보내기</h4>
         <p className="dev__muted">
-          답변 기록과 보완한 카드 해석은 이 브라우저(localStorage)에만 저장됩니다.
-          주기적으로 내려받아 두거나, 다른 기기로 옮길 때 사용하세요.
+          답변 기록과 보완한 카드 해석은 Supabase 에 저장됩니다.
+          지금 화면에 불러온 데이터를 JSON 파일로 내려받습니다.
         </p>
         <button type="button" className="dev__btn" onClick={download}>JSON 내려받기</button>
       </div>
       <div className="dev__review">
-        <h4>가져오기</h4>
+        <h4>가져오기 (서버에 합치기)</h4>
+        <p className="dev__muted">
+          예전에 브라우저 저장소 시절 내려받은 백업 파일도 여기서 서버로 옮길 수 있습니다.
+          가져온 답변은 현재 계정 소유로 저장됩니다.
+        </p>
         <input ref={fileRef} type="file" accept="application/json" />
         <div className="dev__row">
-          <button type="button" className="dev__btn" onClick={() => onFile(fileRef.current?.files?.[0], 'merge')}>합치기</button>
-          <button
-            type="button"
-            className="dev__danger"
-            onClick={() => window.confirm('현재 데이터를 모두 덮어쓸까요?') && onFile(fileRef.current?.files?.[0], 'replace')}
-          >
-            덮어쓰기
-          </button>
+          <button type="button" className="dev__btn" onClick={() => onFile(fileRef.current?.files?.[0])}>서버에 합치기</button>
           {message && <span className="dev__saved">{message}</span>}
         </div>
       </div>
